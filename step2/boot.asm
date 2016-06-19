@@ -43,10 +43,10 @@ putchar_loop:
    jmp putchar_loop ; Repeat
  
 msg:
-   db 'Hello World yoyoyo', 13, 10, 0
-   ; 13 is carriage return \n
-   ; 10 is new line \r
-   ; Historically a \n was used to move the carriage down, while the \r was used to move the carriage back to the left side of the page.
+   db 'Hello, World!', 13, 10, 0
+   ; 13 is carriage return \r
+   ; 10 is line feed \n
+   ; Historically a \r was used to move the carriage down, while the \n was used to move the cursor back to the left side of the page.
 
 hang:
    ;hlt ; Don't do just this b/c after an interrupt happens, the computer
