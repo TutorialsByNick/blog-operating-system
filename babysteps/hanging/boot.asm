@@ -1,5 +1,4 @@
 ; step1.asm
-
 hang:
     jmp hang
 
